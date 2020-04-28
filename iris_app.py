@@ -9,6 +9,11 @@ with open('rf.pkl', 'rb') as model_file:
 
 app = Flask(__name__)
 
+@app.route('/')
+
+def hello():
+    return 'Hey Mayank its working fine'
+
 @app.route('/webhook',methods=['POST','GET'])
 
 
